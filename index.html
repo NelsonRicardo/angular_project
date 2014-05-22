@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nelson's First AngularJS Project</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Nelson's First AngularJS Project</h1>
+		<div id="content" data-ng-app="MyApp" data-ng-controller="MainController">
+			<h2>Enter some text to add to the list:</h2>
+			<input type="text" data-ng-model="newItem">
+			<button data-ng-click="addNew()">ADD</button>
+			<ul>
+				<li data-ng-repeat="item in items">{{item}}</li>
+			</ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" type="text/javascript"></script>
+		<script src="app.js" type="text/javascript"></script>
+		<script src="maincontroller.js" type="text/javascript"></script>
+	</body>
+</html>
